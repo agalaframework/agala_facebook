@@ -6,8 +6,5 @@ defmodule Agala.Provider.Facebook.Helpers.Send do
   end
 
   def messages(page_name, payload, opts) do
-    # :hackney.post(
-
-    # )
   end
 end
