@@ -1,6 +1,4 @@
 defmodule Agala.Provider.Facebook.Controllers.Callback do
-  alias Plug.Conn
-
   alias Agala.Provider.Facebook.Controllers.View
 
   def handle(conn) do
