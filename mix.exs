@@ -23,9 +23,11 @@ defmodule Agala.Provider.Facebook.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:agala, "~> 3.0"},
+      {:agala, github: "Victoria91/agala", branch: "move-to-agala-2-0-5-with-plugs-for-facebook"},
       {:jason, "~> 1.1"},
-      {:plug, "~> 1.6"}
+      {:plug, "~> 1.6"},
+      {:httpoison, "~> 1.2"},
+      {:hackney, "~> 1.13"}
     ]
   end
 

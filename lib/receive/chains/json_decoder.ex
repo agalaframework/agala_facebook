@@ -3,7 +3,8 @@ defmodule Agala.Provider.Facebook.Chains.JsonDecoder do
 
   def init(args), do: args
 
-  def call(%Agala.Conn{request: body} = conn, _opts) when is_binary(body) do
-    put_in(conn, [:request], Jason.decode!(body))
+  def call(%Agala.Conn{request: request} = conn, _opts) when is_binary(request) do
+  	conn
+  	|> Map.put(:request, Jason.decode!(request))
   end
 end
