@@ -40,7 +40,7 @@ defmodule Agala.Provider.Facebook.Helpers.Send do
            Map.get(payload, :headers, []),
            Map.get(payload, :http_opts) || Map.get(bot_params.private, :http_opts) || []
          ) do
-      {:ok, %HTTPoison.Response{body: body}} -> Jason.decode!(body)
+      {:ok, %HTTPoison.Response{body: body}} -> {:ok, Jason.decode!(body)}
       error -> error
     end
   end
