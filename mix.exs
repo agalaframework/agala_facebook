@@ -4,7 +4,7 @@ defmodule Agala.Provider.Facebook.MixProject do
   def project do
     [
       app: :agala_facebook,
-      version: "2.5",
+      version: "2.5.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -27,7 +27,8 @@ defmodule Agala.Provider.Facebook.MixProject do
       {:jason, "~> 1.1"},
       {:plug, "~> 1.6"},
       {:httpoison, "~> 1.2"},
-      {:hackney, "~> 1.13"}
+      {:hackney, "~> 1.13"},
+      {:ex_doc, "~> 0.18.0", only: :dev},
     ]
   end
 
