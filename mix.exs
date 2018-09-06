@@ -4,7 +4,7 @@ defmodule Agala.Provider.Facebook.MixProject do
   def project do
     [
       app: :agala_facebook,
-      version: "3.0.0",
+      version: "2.5",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -23,7 +23,7 @@ defmodule Agala.Provider.Facebook.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:agala, github: "Victoria91/agala", branch: "move-to-agala-2-0-5-with-plugs-for-facebook"},
+      {:agala, "~> 2.5"},
       {:jason, "~> 1.1"},
       {:plug, "~> 1.6"},
       {:httpoison, "~> 1.2"},
